@@ -1,0 +1,18 @@
+using System;
+
+
+namespace Testes_Gerais
+{
+    class Modelo
+    {
+        public static string s = "10";
+        public static int i = int.Parse(s);
+
+        public int total = i + 100;
+
+        public void Rodar()
+        {
+            Console.WriteLine($"O valor de 100 + {i} é {total}.");
+        }
+    }
+}
