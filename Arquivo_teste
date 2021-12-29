@@ -3,16 +3,15 @@ using System;
 
 namespace Testes_Gerais
 {
-    class Modelo
+    class Car
     {
-        public static string s = "10";
-        public static int i = int.Parse(s);
+        string num = "10";
+        int price = int.Parse(num); // O problema está aqui quando esse arquivo faz parte de uma solução. O VS pede que NUM seja STATIC ou que se crie um objeto.
 
-        public int total = i + 100;
-
-        public void Rodar()
+        public void Comprar()
         {
-            Console.WriteLine($"O valor de 100 + {i} é {total}.");
+            price += 200;
+            Console.WriteLine($"The car's price is {price}.");
         }
     }
 }
